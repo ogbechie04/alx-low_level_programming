@@ -5,7 +5,7 @@
  *
  * @x: integer
  *
- * Return: 0 if successful
+ * Return: + if x is positive, - if x is negative and 0 if x is 0
  */
 
 
@@ -13,11 +13,11 @@ int _abs(int x)
 {
 	if (x < 0)
 	{
-		_putchar(-x);
+		return(-x);
 	}
 	else
 	{
-		_putchar(x);
+		return(x);
 	}
 
 	return (0);
