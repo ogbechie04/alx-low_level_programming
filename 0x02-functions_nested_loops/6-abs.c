@@ -3,16 +3,14 @@
 /**
  * _abs - This finds the absolute value of an integer
  *
- * @int: data type
+ * @x: integer
  *
  * Return: 0 if successful
  */
 
 
-int _abs(int)
+int _abs(int x)
 {
-	int x;
-
 	if (x > 0)
 	{
 		_putchar(x);
