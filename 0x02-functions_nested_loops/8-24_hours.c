@@ -14,8 +14,8 @@ void jack_bauer(void)
 	{
 		for (seconds = 0; seconds <= 59; seconds++)
 		{
-			_putchar((minutes / 10) + '0');
-			_putchar((minutes % 10) + '0');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
 			_putchar(':');
 			_putchar((seconds / 10) + '0');
 			_putchar((seconds % 10) + '0');
