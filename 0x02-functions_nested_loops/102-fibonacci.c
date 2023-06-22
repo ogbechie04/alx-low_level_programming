@@ -13,10 +13,10 @@ int main(void)
 	unsigned long k;
 	unsigned long l;
 
-	j = 1;
-	k = 2;
+	j = 0;
+	k = 1;
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i < 50; i++)
 	{
 		l = j + k;
 		j = k;
@@ -24,7 +24,7 @@ int main(void)
 
 		printf("%lu", l);
 
-		if (i == 50)
+		if (i == 49)
 		{
 			continue;
 		}
