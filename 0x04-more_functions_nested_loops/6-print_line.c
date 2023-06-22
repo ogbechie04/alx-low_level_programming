@@ -10,13 +10,8 @@ void print_line(int n)
 {
 	int j;
 
-	for (j = 0; j <= n; j++)
+	for (j = 1; j <= n; j++)
 	{
-		if (n <= 0)
-		{
-			break;
-		}
-
 		_putchar('_');
 	}
 
