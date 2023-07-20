@@ -11,21 +11,20 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-    unsigned int i = 0, result = 0;
+	unsigned int i = 0, result = 0;
 
-    va_list(numbers);
-    va_start(numbers, n);
-    if (n == 0)
-    {
-        return (0);
-    }
+	va_list(numbers);
+	va_start(numbers, n);
+	if (n == 0)
+	{
+		return (0);
+	}
 
-    for (i = 0; i < n; i++)
-    {
-        result += va_arg(numbers, int);
-    }
+	for (i = 0; i < n; i++)
+	{
+		result += va_arg(numbers, int);
+	}
 
-    va_end(numbers);
-    return (result);
-
+	va_end(numbers);
+	return (result);
 }
