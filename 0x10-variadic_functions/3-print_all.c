@@ -12,7 +12,7 @@
 void print_all(const char * const format, ...)
 {
     int i = 0;
-    char *ptf, *separator = "";
+    char *ptf, *seperator = "";
 
     va_list(p_all);
     va_start(p_all, format);
@@ -24,13 +24,13 @@ void print_all(const char * const format, ...)
             switch (format[i])
             {
             case 'c':
-                printf("%s%c", separator, va_arg(p_all, int));
+                printf("%s%c", seperator, va_arg(p_all, int));
                 break;
             case 'i':
-                printf("%s%d", separator, va_arg(p_all, int));
+                printf("%s%d", seperator, va_arg(p_all, int));
                 break;
             case 'f':
-                printf("%s%f", separator, va_arg(p_all, double));
+                printf("%s%f", seperator, va_arg(p_all, double));
                 break;
             case 's':
                 ptf = va_arg(p_all, char *);
@@ -38,14 +38,14 @@ void print_all(const char * const format, ...)
                 {
                     ptf = "(nil)";
                 }
-                printf("%s%s", separator, ptf);
+                printf("%s%s", seperator, ptf);
                 break;
             default:
                 i++;
-                break;
+                continue;
             }
 
-            separator = ", ";
+            seperator = ", ";
             i++;
         }
     }
